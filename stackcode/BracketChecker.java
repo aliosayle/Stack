@@ -26,9 +26,11 @@ public class BracketChecker {
         String expression1 = "(((a+b)*c)+(u*v))";
         String expression2 = "(a+b)*c)";
         String expression3 = "(a+b)*)c+b(";
+        String expression4 = "a + (2b + (d))";
         
         System.out.println(check(expression1)); // true
         System.out.println(check(expression2)); // false
         System.out.println(check(expression3)); // false
+        System.out.println(check(expression4)); // true
     }
 }
